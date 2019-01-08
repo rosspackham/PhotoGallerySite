@@ -1,0 +1,177 @@
+/* Global */
+
+* {
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #000000;
+}
+
+#content {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+	grid-template-areas:
+	"nav nav nav nav nav nav"
+	"pic1 pic2 pic3 pic4 pic5 pic6"
+	"pic7 pic8 pic9 pic10 pic11 pic12"
+	"pic13 pic14 pic15 pic16 pic17 pic18";
+	
+	background-color: blue;
+}
+
+/* Nav */
+
+#nav {
+	font-family: 'Sedgwick Ave', cursive;
+	background-color: grey;
+	width: 100%;
+	grid-area: nav;
+}
+
+#nav ul {
+	list-style: none;
+	justify-content: right;
+	display: flex;
+	align-content: left;
+	align-items: left;
+	margin: 0;
+	padding: 0;
+}
+
+#nav li {
+	padding: 10px;
+	margin: 0;
+}
+
+#nav ul li h1 {
+	font-size: 30px;
+	color: #fff;
+	padding-right: 30px;
+}
+
+#nav a {
+	text-decoration: none;
+	color: purple;
+}
+
+.showcase {
+	background-color: blue;
+}
+
+.pic {
+	margin: 0px;
+	border: 5px solid #345678;
+}
+
+.showcase div img {
+	width: 70px;
+	height: 50px;
+}
+
+#pic1 {
+	grid-area: pic1;
+}
+
+#pic2 {
+	grid-area: pic2;
+}
+
+#pic3 {
+	grid-area: pic3;
+}
+
+#pic4 {
+	grid-area: pic4;
+}
+
+#pic5 {
+	grid-area: pic5;
+}
+
+#pic6 {
+	grid-area: pic6;
+}
+
+#pic7 {
+	grid-area: pic7;
+}
+
+#pic8 {
+	grid-area: pic8;
+}
+
+#pic9 {
+	grid-area: pic9;
+}
+
+#pic10 {
+	grid-area: pic10;
+}
+
+#pic11 {
+	grid-area: pic11;
+}
+
+#pic12 {
+	grid-area: pic12;
+}
+
+#pic13 {
+	grid-area: pic13;
+}
+
+#pic14 {
+	grid-area: pic14;
+}
+
+#pic15 {
+	grid-area: pic15;
+}
+
+#pic16 {
+	grid-area: pic16;
+}
+
+#pic17 {
+	grid-area: pic17;
+}
+
+#pic18 {
+	grid-area: pic18;
+}
+
+
+/* Media queries */
+
+@media screen and (min-width: 50px) {
+  #content {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+	grid-template-areas:
+	"nav"
+	"pic1"
+	"pic2"
+	"pic3"
+	"pic4"
+	"pic5"
+	"pic6"
+	"pic7"
+	"pic8"
+	"pic9"
+	"pic10"
+	"pic11"
+	"pic12"
+	"pic13"
+	"pic14"
+	"pic15"
+	"pic16"
+	"pic17"
+	"pic18";
+	
+	background-color: blue;
+}
+}
