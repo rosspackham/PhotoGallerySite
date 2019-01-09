@@ -19,7 +19,7 @@ body {
 	"pic7 pic8 pic9 pic10 pic11 pic12"
 	"pic13 pic14 pic15 pic16 pic17 pic18";
 	
-	background-color: blue;
+	/* background-color: blue; */
 }
 
 /* Nav */
@@ -35,8 +35,9 @@ body {
 	list-style: none;
 	justify-content: right;
 	display: flex;
+	flex-direction: row;
 	align-content: left;
-	align-items: left;
+	align-items: center;
 	margin: 0;
 	padding: 0;
 }
@@ -66,9 +67,9 @@ body {
 	border: 5px solid #345678;
 }
 
-.showcase div img {
-	width: 70px;
-	height: 50px;
+#content div img {
+	width: 100%;
+	height: 100%;
 }
 
 #pic1 {
@@ -146,10 +147,54 @@ body {
 
 /* Media queries */
 
-@media screen and (min-width: 50px) {
+@media screen and (max-width: 1024px) {
   #content {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+	grid-template-areas:
+	"nav nav nav nav"
+	"pic1 pic2 pic3 pic4"
+	"pic5 pic6 pic7 pic8"
+	"pic9 pic10 pic11 pic12"
+	"pic13 pic14 pic15 pic16"
+	"pic17 pic18 . .";
+	
+	/* background-color: none; */
+}
+}
+
+@media screen and (max-width: 768px) {
+  #content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: minmax(50px, auto);
+	grid-template-areas:
+	"nav nav nav"
+	"pic1 pic2 pic3"
+	"pic4 pic5 pic6"
+	"pic7 pic8 pic9"
+	"pic10 pic11 pic12"
+	"pic13 pic14 pic15"
+	"pic16 pic17 pic18";
+	
+	/* background-color: none; */
+}
+}
+
+
+@media screen and (max-width: 400px) {
+	#nav ul {
+	list-style: none;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+
+ 	#content {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
 	grid-auto-rows: minmax(100px, auto);
 	grid-template-areas:
 	"nav"
@@ -172,6 +217,8 @@ body {
 	"pic17"
 	"pic18";
 	
-	background-color: blue;
+	/* background-color: none; */
 }
 }
+
+

@@ -1,0 +1,20 @@
+/* images array */
+let imagesArray = new Array();
+imagesArray[0] = "img/IMG_9219.JPG";
+imagesArray[1] = "img/IMG_9220.JPG";
+imagesArray[2] = "img/IMG_9221.JPG";
+imagesArray[3] = "img/IMG_9223.JPG";
+imagesArray[4] = "img/IMG_9225.JPG";
+imagesArray[5] = "img/IMG_9226.JPG";
+imagesArray[6] = "img/IMG_9227.JPG";
+imagesArray[7] = "img/IMG_9228.JPG";
+imagesArray[8] = "img/IMG_9229.JPG";
+imagesArray[9] = "img/IMG_9230.JPG";
+imagesArray[10] = "img/IMG_9232.JPG";
+imagesArray[11] = "img/IMG_9233.JPG";
+imagesArray[12] = "img/IMG_9234.JPG";
+imagesArray[13] = "img/IMG_9235.JPG";
+imagesArray[14] = "img/IMG_9236.JPG";
+imagesArray[15] = "img/IMG_9237.JPG";
+imagesArray[16] = "img/IMG_9238.JPG";
+imagesArray[17] = "img/IMG_9239.JPG";
